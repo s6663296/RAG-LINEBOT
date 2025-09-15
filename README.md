@@ -1,6 +1,6 @@
 ﻿# 餐廳 AI 客服
 
-![](RAG範例.png)
+![](README/RAG範例.png)
 
 ## 目錄
 - [餐廳 AI 客服](#餐廳-ai-客服)
@@ -49,7 +49,7 @@
 ## 系統架構
 
 ### 系統流程圖
-![](Aspose.Words.a3e812dd-1f9e-4df3-b834-0148231fb2ac.001.jpeg)
+![](README/Aspose.Words.a3e812dd-1f9e-4df3-b834-0148231fb2ac.001.jpeg)
 
 ### 技術棧
 | 類別 | 技術 |
@@ -68,14 +68,14 @@
 
 ### 1. RAG 問答系統
 
-![](Aspose.Words.a3e812dd-1f9e-4df3-b834-0148231fb2ac.003.png)
+![](README/Aspose.Words.a3e812dd-1f9e-4df3-b834-0148231fb2ac.003.png)
 
 1.  **知識庫處理**:
     *   **資料來源**: 台灣知名連鎖早餐品牌「麥味登」的官方網站資訊 (PDF 格式)。
     *   **語義切分**: 使用 `SemanticChunker` 將 PDF 文件拆解成獨立的知識單元。
     *   **向量化**: 透過 `multilingual-e5-small` 嵌入模型，將知識單元轉換為向量。
     *   **索引**: 將向量化的知識存入 FAISS 向量資料庫，以供快速檢索。
-    ![](Aspose.Words.a3e812dd-1f9e-4df3-b834-0148231fb2ac.002.png)
+    ![](README/Aspose.Words.a3e812dd-1f9e-4df3-b834-0148231fb2ac.002.png)
 
 2.  **問答流程**:
     *   當收到使用者問題，系統會先擴展成多個語義相近的問題，並在知識庫中進行多路搜索。
@@ -133,7 +133,7 @@ python main.py
 
 ## 部署至 Google Cloud Run
 
-![](Aspose.Words.a3e812dd-1f9e-4df3-b834-0148231fb2ac.004.jpeg)
+![](README/Aspose.Words.a3e812dd-1f9e-4df3-b834-0148231fb2ac.004.jpeg)
 
 ### 1. 前置作業
 
