@@ -129,7 +129,3 @@ cython_debug/
 
 # Custom
 chunk_cache.pkl
-credentials.json
-token.json
-faiss_index_store/
-knowledge_base_pdfs/
